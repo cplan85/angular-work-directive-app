@@ -11,4 +11,14 @@
 
 <br>
 <p>ngIf modifies the structure of the DOM</p>
-<p *ngIf=registered>{{message}} with the name of {{name}} {{surname}}</p>
+<p *ngIf="registered; else notRegistered">{{message}} with the name of {{name}} {{surname}}</p>
+<ng-template #notRegistered>
+<p>Not registered</p>
+</ng-template>
+
+<br><br>
+
+<ul>
+<li *ngFor="let entry of entries"><span></span>{{entry.title}}</li>
+
+</ul>

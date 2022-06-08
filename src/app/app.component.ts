@@ -11,6 +11,16 @@ export class AppComponent {
   registered= false;
   name='';
   surname='';
+  entries: {title: string}[] = [{title:""}];
+
+  constructor(){
+    this.entries=[
+      {title: "Python every day more present"},
+      {title: "Java present for more than 20 years"},
+      {title: "Javascript everytime more functional"},
+      {title: "Where did Pascal go?"},
+    ]
+  }
 
   registerUser(){
     this.registered=true
