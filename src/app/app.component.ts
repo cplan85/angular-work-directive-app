@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'workDirectiveApp';
+  title = 'Register of Users';
+  message= '';
+  registered= false;
+  name='';
+  surname='';
+
+  registerUser(){
+    this.registered=true
+    this.message="User registered successfully."
+  }
 }
